@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Class</title>
+</head>
+<body>
+    <script>
+        // In strict mode we need to create variable with var, const, and let, we can not use automatically means, we cannot create variable without let, const and var keywords
+        // "use strict";
+        // let student1 = '';
+        // function stud() {
+            
+        // }
+        // 1. Define the class
+        //ClassName should be in PascalCase
+        // Class have 3 method
+        class DineshSchool {
+        // 1. P:V
+        stu1='';
+        stu2='';
+        stu3='';
+        // 1. Constructor
+        // Constructor is like a special Method or function
+        constructor(s1, s2, s3){
+            // The role of the constructor is to initialize the property.
+             // Left = Right Associativity of the operator
+             this.stu1 = s1;
+            //  this is an internal class object
+        }
+        // 2. Method/Function
+        myStudent() {
+            console.log('I am your Student ' + this.stu1);
+        }
+        // 3. Function Defination
+        
+        }
+        // 2. Create class object
+        // syntax for Javascript class
+        // let classObject = new ClassName();
+        // Class instantiation
+        // Parameter (Kartik, Chirag, and Kunal) goes to Constructor
+        students = new DineshSchool('Kartik', `Chirag`, "Kunal");
+        // student is an external class object
+        // classObject.member
+        students.myStudent();
+    </script>
+</body>
+</html>
