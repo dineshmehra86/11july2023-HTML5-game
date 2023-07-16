@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Game</title>
+</head>
+<body>
+    <script>
+        // Option 2 for function onload event
+        // // If we are not giving a function name, then it will be called Anonymous function
+        // window.onload = function() {
+        //     console.log("bhai main ek baar fhir aa gaya hun")
+        // }
+        class MyGameMain {
+        //1. P:V
+        //2. Constructor
+        //3. Method
+        start(){
+            console.log("meri game start ho gayi hai")
+        };
+        } 
+        let myGame = new MyGameMain();
+        // Option 3 for onload function event
+        window.addEventListener('load', function(){
+            console.log("bhai main ek baar fhir aa gaya hun")
+            // object.method();
+            myGame.start();
+        })
+        // window.addEventListener('keypress', function(){
+        //     console.log("bhai main ek baar fhir aa gaya hun")
+        // })
+
+
+        
+    </script>
+</body>
+</html>
